@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_sat_cfdi_regimen_fiscal_form" model="ir.ui.view">
+        <field name="name">sat.cfdi.regimen.fiscal.form</field>
+        <field name="model">sat.cfdi.c_regimen_fiscal</field>
+        <field name="arch" type="xml">
+            <form string="Fiscal Regime">
+                <group name="main_group">
+                    <group>
+                        <field name="name" />
+                        <field name="code" />
+                    </group>
+                    <group>
+                        <field name="natural" />
+                        <field name="legal" />
+                    </group>
+                    <group>
+                        <field name="date_start" />
+                        <field name="date_end" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_sat_cfdi_regiment_fiscal_tree" model="ir.ui.view">
+        <field name="name">sat.cfdi.regimen.fiscal.tree</field>
+        <field name="model">sat.cfdi.c_regimen_fiscal</field>
+        <field name="arch" type="xml">
+            <tree string="Fiscal Regime">
+                <field name="code" />
+                <field name="name" />
+                <field name="natural" />
+                <field name="legal" />
+                <field name="date_start" />
+                <field name="date_end" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_sat_cfdi_regiment_fiscal_search" model="ir.ui.view">
+        <field name="name">sat.cfdi.regimen.fiscal.search</field>
+        <field name="model">sat.cfdi.c_regimen_fiscal</field>
+        <field name="arch" type="xml">
+            <search string="Search Fiscal Regime">
+                <field name="name" string="Fiscal Regime" />
+                <field name="code" string="Code" />
+            </search>
+        </field>
+    </record>
+    <record id="action_sat_cfdi_regimen_fiscal" model="ir.actions.act_window">
+        <field name="name">Fiscal Regime</field>
+        <field name="res_model">sat.cfdi.c_regimen_fiscal</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to start a new Fiscal Regime.
+            </p>
+        </field>
+    </record>
+    <menuitem
+        action="action_sat_cfdi_regimen_fiscal"
+        id="menu_action_sat_cfdi_regimen_fiscal"
+        name="Fiscal Regime"
+        sequence="3"
+        parent="l10n_mx_sat_cat_cfdi.menu_sat_cat_cfdi"
+    />
+</odoo>

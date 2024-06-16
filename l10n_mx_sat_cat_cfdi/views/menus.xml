@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_sat" name="SAT" parent="base.menu_administration" />
+    <menuitem id="menu_sat_cat" name="Catálogos" parent="menu_sat" />
+    <menuitem id="menu_sat_cat_cfdi" name="CFDI" parent="menu_sat_cat" />
+</odoo>
