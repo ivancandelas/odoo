@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_sat_cat_nomina" name="Nómina" parent="l10n_mx_sat_cat_cfdi.menu_sat_cat" />
+</odoo>
