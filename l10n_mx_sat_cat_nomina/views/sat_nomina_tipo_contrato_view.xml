@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_sat_nomina_tipo_contrato_form" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.contrato.form</field>
+        <field name="model">sat.nomina.c_tipo_contrato</field>
+        <field name="arch" type="xml">
+            <form string="Contract Type">
+                <group name="main_group">
+                    <group>
+                        <field name="name" />
+                        <field name="code" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_sat_nomina_tipo_contrato_tree" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.contrato.tree</field>
+        <field name="model">sat.nomina.c_tipo_contrato</field>
+        <field name="arch" type="xml">
+            <tree string="Contract Type">
+                <field name="code" />
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_sat_nomina_tipo_contrato_search" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.contrato.search</field>
+        <field name="model">sat.nomina.c_tipo_contrato</field>
+        <field name="arch" type="xml">
+            <search string="Search Contract Type">
+                <field name="name" string="Contract Type" />
+                <field name="code" string="Code" />
+            </search>
+        </field>
+    </record>
+    <record id="action_sat_nomina_tipo_contrato" model="ir.actions.act_window">
+        <field name="name">Contract Type</field>
+        <field name="res_model">sat.nomina.c_tipo_contrato</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to start a new contract type.
+            </p>
+        </field>
+    </record>
+    <menuitem
+        action="action_sat_nomina_tipo_contrato"
+        id="menu_action_sat_nomina_tipo_contrato"
+        name="Contract Type"
+        sequence="3"
+        parent="l10n_mx_sat_cat_nomina.menu_sat_cat_nomina"
+    />
+</odoo>

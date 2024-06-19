@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sat_nomina_tipo_contrato,access_sat_nomina_tipo_contrato,model_sat_nomina_c_tipo_contrato,base.group_user,1,0,0,0
+access_sat_nomina_tipo_nomina,access_sat_nomina_tipo_nomina,model_sat_nomina_c_tipo_nomina,base.group_user,1,0,0,0

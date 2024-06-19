@@ -13,12 +13,14 @@
     'website': '',
     "license": "AGPL-3",
     "category": "Localization",
-    "depends": ["base"],
+    "depends": ["base", "l10n_mx_sat_cat_cfdi"],
     'data': [
         "security/ir.model.access.csv",
         "data/sat.nomina.c_tipo_contrato.csv",
+        "data/sat.nomina.c_tipo_nomina.csv",
         "views/menus.xml",
-        "views/sat_nomina_c_tipo_contrato_view.xml"
+        "views/sat_nomina_tipo_contrato_view.xml",
+        "views/sat_nomina_tipo_nomina_view.xml"
     ],
     'application': False
 }
