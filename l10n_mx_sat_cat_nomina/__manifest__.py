@@ -18,9 +18,13 @@
         "security/ir.model.access.csv",
         "data/sat.nomina.c_tipo_contrato.csv",
         "data/sat.nomina.c_tipo_nomina.csv",
+        "data/sat.nomina.c_tipo_regimen.csv",
+        "data/sat.nomina.c_tipo_jornada.csv",
         "views/menus.xml",
         "views/sat_nomina_tipo_contrato_view.xml",
-        "views/sat_nomina_tipo_nomina_view.xml"
+        "views/sat_nomina_tipo_nomina_view.xml",
+        "views/sat_nomina_tipo_regimen_view.xml",
+        "views/sat_nomina_tipo_jornada_view.xml"
     ],
     'application': False
 }

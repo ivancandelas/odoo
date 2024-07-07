@@ -2,11 +2,11 @@
 from odoo import models, fields
 
 
-class SatNominaTipoContrato(models.Model):
-    _name = "sat.nomina.c_tipo_contrato"
-    _description = "SAT Nómina Tipo Contrato"
+class SatNominaTipoJornada(models.Model):
+    _name = "sat.nomina.c_tipo_jornada"
+    _description = "SAT Nómina Tipo Jornada"
 
-    name = fields.Char('Contract Type', required=True)
+    name = fields.Char('Shift Type', required=True)
     code = fields.Char('Code', required=True)
 
     _sql_constraints = [

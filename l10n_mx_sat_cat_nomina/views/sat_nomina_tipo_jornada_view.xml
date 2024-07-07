@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_sat_nomina_tipo_jornada_form" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.jornada.form</field>
+        <field name="model">sat.nomina.c_tipo_jornada</field>
+        <field name="arch" type="xml">
+            <form string="Shift Type">
+                <group name="main_group">
+                    <group>
+                        <field name="name" />
+                        <field name="code" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_sat_nomina_tipo_jornada_tree" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.jornada.tree</field>
+        <field name="model">sat.nomina.c_tipo_jornada</field>
+        <field name="arch" type="xml">
+            <tree string="Shift Type">
+                <field name="code" />
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_sat_nomina_tipo_jornada_search" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.jornada.search</field>
+        <field name="model">sat.nomina.c_tipo_jornada</field>
+        <field name="arch" type="xml">
+            <search string="Search Shift Type">
+                <field name="name" string="Shift Type" />
+                <field name="code" string="Code" />
+            </search>
+        </field>
+    </record>
+    <record id="action_sat_nomina_tipo_jornada" model="ir.actions.act_window">
+        <field name="name">Shift Type</field>
+        <field name="res_model">sat.nomina.c_tipo_jornada</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to start a new shift type.
+            </p>
+        </field>
+    </record>
+    <menuitem
+        action="action_sat_nomina_tipo_jornada"
+        id="menu_action_sat_nomina_tipo_jornada"
+        name="Shift Type"
+        sequence="2"
+        parent="l10n_mx_sat_cat_nomina.menu_sat_cat_nomina"
+    />
+</odoo>
