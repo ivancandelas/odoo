@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_sat_nomina_tipo_deduccion_form" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.deduccion.form</field>
+        <field name="model">sat.nomina.c_tipo_deduccion</field>
+        <field name="arch" type="xml">
+            <form string="Deduction Type">
+                <group name="main_group">
+                    <group>
+                        <field name="name" />
+                        <field name="code" />
+                        <field name="date_start" />
+                        <field name="date_end" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_sat_nomina_tipo_deduccion_tree" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.deduccion.tree</field>
+        <field name="model">sat.nomina.c_tipo_deduccion</field>
+        <field name="arch" type="xml">
+            <tree string="Deduction Type">
+                <field name="code" />
+                <field name="name" />
+                <field name="date_start" />
+                <field name="date_end" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_sat_nomina_tipo_deduccion_search" model="ir.ui.view">
+        <field name="name">sat.nomina.tipo.deduccion.search</field>
+        <field name="model">sat.nomina.c_tipo_deduccion</field>
+        <field name="arch" type="xml">
+            <search string="Search Deduction Type">
+                <field name="name" string="Deduction Type" />
+                <field name="code" string="Code" />
+            </search>
+        </field>
+    </record>
+    <record id="action_sat_nomina_tipo_deduccion" model="ir.actions.act_window">
+        <field name="name">Deduction Type</field>
+        <field name="res_model">sat.nomina.c_tipo_deduccion</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to start a new deduction type.
+            </p>
+        </field>
+    </record>
+    <menuitem
+        action="action_sat_nomina_tipo_deduccion"
+        id="menu_action_sat_nomina_tipo_deduccion"
+        name="Deduction Type"
+        sequence="2"
+        parent="l10n_mx_sat_cat_nomina.menu_sat_cat_nomina"
+    />
+</odoo>

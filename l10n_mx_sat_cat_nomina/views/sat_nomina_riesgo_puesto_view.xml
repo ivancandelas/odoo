@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_sat_nomina_riesgo_puesto_form" model="ir.ui.view">
+        <field name="name">sat.nomina.riesgo.puesto.form</field>
+        <field name="model">sat.nomina.c_riesgo_puesto</field>
+        <field name="arch" type="xml">
+            <form string="Position Risk">
+                <group name="main_group">
+                    <group>
+                        <field name="name" />
+                        <field name="code" />
+                        <field name="date_start" />
+                        <field name="date_end" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_sat_nomina_riesgo_puesto_tree" model="ir.ui.view">
+        <field name="name">sat.nomina.riesgo.puesto.tree</field>
+        <field name="model">sat.nomina.c_riesgo_puesto</field>
+        <field name="arch" type="xml">
+            <tree string="Position Risk">
+                <field name="code" />
+                <field name="name" />
+                <field name="date_start" />
+                <field name="date_end" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_sat_nomina_riesgo_puesto_search" model="ir.ui.view">
+        <field name="name">sat.nomina.riesgo.puesto.search</field>
+        <field name="model">sat.nomina.c_riesgo_puesto</field>
+        <field name="arch" type="xml">
+            <search string="Search Position Risk">
+                <field name="name" string="Position Risk" />
+                <field name="code" string="Code" />
+            </search>
+        </field>
+    </record>
+    <record id="action_sat_nomina_riesgo_puesto" model="ir.actions.act_window">
+        <field name="name">Position Risk</field>
+        <field name="res_model">sat.nomina.c_riesgo_puesto</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to start a new position risk.
+            </p>
+        </field>
+    </record>
+    <menuitem
+        action="action_sat_nomina_riesgo_puesto"
+        id="menu_action_sat_nomina_riesgo_puesto"
+        name="Position Risk"
+        sequence="2"
+        parent="l10n_mx_sat_cat_nomina.menu_sat_cat_nomina"
+    />
+</odoo>

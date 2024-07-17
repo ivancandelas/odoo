@@ -7,8 +7,8 @@
             <form string="Contract Type">
                 <group name="main_group">
                     <group>
-                        <field name="name" />
                         <field name="code" />
+                        <field name="name" />
                     </group>
                 </group>
             </form>

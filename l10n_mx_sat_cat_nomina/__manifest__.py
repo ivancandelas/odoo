@@ -20,11 +20,19 @@
         "data/sat.nomina.c_tipo_nomina.csv",
         "data/sat.nomina.c_tipo_regimen.csv",
         "data/sat.nomina.c_tipo_jornada.csv",
+        "data/sat.nomina.c_riesgo_puesto.csv",
+        "data/sat.nomina.c_tipo_percepcion.csv",
+        "data/sat.nomina.c_tipo_deduccion.csv",
+        "data/sat.nomina.c_tipo_otro_pago.csv",
         "views/menus.xml",
         "views/sat_nomina_tipo_contrato_view.xml",
         "views/sat_nomina_tipo_nomina_view.xml",
         "views/sat_nomina_tipo_regimen_view.xml",
-        "views/sat_nomina_tipo_jornada_view.xml"
+        "views/sat_nomina_tipo_jornada_view.xml",
+        "views/sat_nomina_riesgo_puesto_view.xml",
+        "views/sat_nomina_tipo_percepcion_view.xml",
+        "views/sat_nomina_tipo_deduccion_view.xml",
+        "views/sat_nomina_tipo_otro_pago_view.xml"
     ],
     'application': False
 }
